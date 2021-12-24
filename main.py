@@ -1,5 +1,5 @@
 import requests
-from functions.online_ops import find_my_ip, get_random_advice, get_random_joke, play_on_youtube, search_on_google, search_on_wikipedia, get_latest_news, get_trending_movies, get_weather_report, send_email, send_whatsapp_message
+from functions.online_ops import find_my_ip, get_random_advice, get_random_joke, play_on_youtube, search_on_google, search_on_wikipedia, get_latest_news, get_trending_movies, get_weather_report, send_email, send_whatsapp_message, get_random_cocktail
 from functions.os_ops import open_calculator, open_cmd, open_notepad
 from pprint import pprint
 import pyttsx3
@@ -168,3 +168,10 @@ if __name__ == '__main__':
                 speak("I've sent the email sir.")
             else:
                 speak("Something went wrong while I was sending the mail. Please check the error logs sir.")
+
+        elif "drink" in query:
+            cocktail = get_random_cocktail()
+            speak(f"Today I would suggest you to try out the {cocktail}")
+            speak("For your convenience, I am printing it on the screen sir.")
+            print(cocktail, sep='\n')
+            
