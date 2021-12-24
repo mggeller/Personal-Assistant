@@ -52,12 +52,15 @@ pipwin install pyaudio
 To use this you have to activate the Virtual Environemnt and also create and add correct values in the .env file.
 Example of the keys taht should be in the .env file:
 
+```
 USER=<Your name>
 BOTNAME=<Whatever you want this asstistants name to be>
-NEWS_API_KEY=<[News API key](https://newsapi.org/)>
-OPENWEATHER_APP_ID=<[Weather API Key](https://openweathermap.org/)>
-TMDB_API_KEY=<[Movie API Key](https://www.themoviedb.org/)>
+NEWS_API_KEY=<News API key - https://newsapi.org/>
+OPENWEATHER_APP_ID=<Weather API Key - https://openweathermap.org/>
+TMDB_API_KEY=<Movie API Key - https://www.themoviedb.org/>
 EMAIL=<Your email>
 PASSWORD=<Your email password>
+```
+
 
 Tutorials and more in depth information how to start can be found here - https://iread.ga/series/10/virtual-personal-assistant-using-python
