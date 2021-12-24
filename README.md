@@ -1,6 +1,6 @@
 # Personal-Assistant
 
-##Installation
+## Installation
 
 For Personal Assistant to work, you need to install the Python virtual environemnt in the folder using this command:
 
