@@ -90,4 +90,9 @@ def get_random_joke():
 
 def get_random_advice():
     res = requests.get("https://api.adviceslip.com/advice").json()
+    print(res)
     return res['slip']['advice']
+
+def get_random_cocktail():
+    res = requests.get("https://www.thecocktaildb.com/api/json/v1/1/random.php").json()
+    return res['drinks'][0]['strDrink']
